@@ -10,7 +10,7 @@ const audio = new Audio();
 
 function playAudio(name) {
     if (!isPlay) {
-        audio.src = `../assets/sounds/${name}.mp3`;
+        audio.src = `../assets/sounds/${name.split(' ').join('')}.mp3`;
         audio.currentTime = 0;
         audio.play();
         isPlay = true
@@ -21,7 +21,7 @@ function playAudio(name) {
 }
 
 function playListAudio(name) {
-    audio.src = `../assets/sounds/${name}.mp3`;
+    audio.src = `../assets/sounds/${name.split(' ').join('')}.mp3`;
     audio.currentTime = 0;
     audio.play();
 }
