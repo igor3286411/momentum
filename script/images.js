@@ -22,7 +22,7 @@ function getRandomIntInclusive(min, max) {
 let randomNum = getRandomIntInclusive(1, 20)
 
 const renderImg = (num, day) => {
-    document.body.style.backgroundImage = `url('../images/${day}/${num}.jpg')`;
+    document.body.style.backgroundImage = `url("./images/${day}/${num}.jpg")`;
 }
 
 const getSlideNext = (num) => {
