@@ -8,7 +8,7 @@ const renderQuotes = (quot) => {
     author.textContent = (authorName.split(','))[0]
 }
 
-async function getWeather() {
+const getQuote = async () => {
     try {
         const url = 'https://type.fit/api/quotes';
         const res = await fetch(url);
@@ -20,8 +20,8 @@ async function getWeather() {
     }
 }
 
-getWeather()
+getQuote()
 
 changeQuote.addEventListener('click', () => {
-    getWeather()
+    getQuote()
 })

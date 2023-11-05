@@ -39,12 +39,13 @@ async function getWeather(city) {
 inputCity.value = 'Minsk'
 getWeather('Minsk')
 
+
 inputCity.addEventListener('keyup', () => {
     localStorage.setItem('city', inputCity.value);
 })
 
 inputCity.addEventListener('change', () => {
-    getWeather(inputCity.value)
+    getWeather(inputCity.value) 
     localStorage.setItem('city', inputCity.value);
 })
 
